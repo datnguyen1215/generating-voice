@@ -18,11 +18,11 @@ This project allows you to generate voice audio files using Amazon Polly and Ele
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/voice-generation-project.git cd voice-generation-project
+`git clone https://github.com/yourusername/voice-generation-project.git cd voice-generation-project`
 
 2. Install the required dependencies:
 
-pip install boto3 pydub elevenlabs
+`pip install boto3 pydub elevenlabs`
 
 
 3. Set up your credentials:
@@ -35,8 +35,7 @@ pip install boto3 pydub elevenlabs
 
 Run the script with the following command:
 
-python amazon_poly.py --padding --silence-in-between --input-file --output-dir --voice-id <voice_id>
-
+`python amazon_poly.py --padding --silence-in-between --input-file --output-dir --voice-id <voice_id>`
 
 Arguments:
 - `--padding`: Silence period before and after the audio (in milliseconds)
@@ -49,8 +48,7 @@ Arguments:
 
 Run the script with the following command:
 
-python eleven_lab.py --voice-id <voice_id> --padding --in-between-silence --input-file --output-dir --output-prefix --output-format
-
+`python eleven_lab.py --voice-id <voice_id> --padding --in-between-silence --input-file --output-dir --output-prefix --output-format`
 
 Arguments:
 - `--voice-id`: Voice ID to use for TTS (required)
